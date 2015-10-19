@@ -14,7 +14,6 @@ int main(int argc, char **argv) {
   vector<string> sequences;
 
   while (scanf("%s %s", id, seq) >= 0) {
-    printf("%s\n", seq);
     sequences.push_back(string(seq));
   }
 
@@ -26,8 +25,6 @@ int main(int argc, char **argv) {
     graph.insertSequenceAlignment(aln, sequences[i], "seq" + to_string(i));
   }
 
-  graph.alignment_strings();
   string consensus;
   graph.generate_consensus(&consensus);
-  printf("%s", consensus.c_str());
 }
