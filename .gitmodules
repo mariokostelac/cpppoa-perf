@@ -1,0 +1,3 @@
+[submodule "cpppoa"]
+	path = cpppoa
+	url = https://github.com/mculinovic/cpppoa.git
